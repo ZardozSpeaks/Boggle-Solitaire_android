@@ -23,8 +23,11 @@ public class PlayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
 
+//puts letter array contents into textView
+
         mLetterArray = (TextView) findViewById(R.id.letterArray);
 
+//generates letter array
 
         vowelQty = ((int) (Math.random() * 2 ) + 2);
         Log.d(TAG, vowelQty + "");
@@ -37,9 +40,16 @@ public class PlayActivity extends AppCompatActivity {
             letters.add(consonants[(int) (Math.random() * consonants.length)]);
         }
 
+
         Log.v("letterLog", letters.toString());
 
-        mLetterArray.setText(letters.toString());
+        String letterString = letters.toString();
+        letterString = letterString.replaceAll("\\[|\\]|,", "");
+
+
+//outputs letter array to textView
+
+        mLetterArray.setText(letterString);
 
 //        Log.d(TAG, letters);
 
