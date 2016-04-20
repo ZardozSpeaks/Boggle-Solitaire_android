@@ -21,7 +21,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="60sp"
-        android:text="Play Madlibs"
+        android:text="Play Boggle"
         android:id="@+id/playButton"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
