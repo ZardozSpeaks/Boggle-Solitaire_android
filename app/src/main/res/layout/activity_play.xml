@@ -20,12 +20,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/inputEditText"
         android:hint="add a word"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_above="@id/addWordButton"
-        android:layout_marginBottom="67dp"
+        android:layout_above="@+id/addWordButton"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"/>
+        android:layout_marginRight="30dp" />
 
     <Button
         android:layout_width="match_parent"
@@ -35,6 +33,5 @@
         android:id="@+id/addWordButton"
         android:background="@color/colorPrimaryDark"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
